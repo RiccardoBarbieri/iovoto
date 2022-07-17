@@ -114,7 +114,7 @@ a {
     flex-direction: row;
     height: 85px;
     border-radius: 20px;
-    background-color: #828792;
+    background-color: #868e9b;
 }
 
 .partito-settings {
@@ -148,15 +148,22 @@ a {
     border-radius: 15px;
 }
 
-.candidato-tile {
+.candidato-tile-base {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 150px;
     height: 55px;
-    background-color: #0c01d3;
     border-radius: 15px;
     margin-right: 10px;
+}
+
+.candidato-tile-edit {
+    background-color: #0c01d3;
+}
+
+.candidato-tile-add {
+    background-color: #6d727c;
 }
 
 .edit-scene {
@@ -168,6 +175,7 @@ a {
     background-color: #0c01d3;
     border-radius: 20px;
     margin-top: 20px;
+    min-height: 450px;
 }
 
 form {
@@ -205,7 +213,7 @@ form input[type="date"] {
 }
 
 form input[type="file"] {
-    
+    color:white;
 }
 
 .radio-container {
