@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Actor" />
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ioVoto</title>
+        <link rel="stylesheet" href="seggi.css">
+
+    </head>
+    <body>
+        <header>
+            <img src="./images/logo.png">
+            <div class="navbar">
+                <div>
+                    <a href="liste.html">LISTE</a>
+                </div>
+                <div>
+                    <a href="scheda.html">SCHEDA</a>
+                </div>
+                <div>
+                    <a href="votazione.html">VOTAZIONE</a>
+                </div>
+                <div>
+                    <a class="link-selected" href="seggi.html">SEGGI</a>
+                </div>
+            </div>
+        </header>        
+        <div class="base-container">
+            <div class="seggi">
+                <h3>COMUNI</h3>
+                <a href="link_a_pagina_con_seggio.html">
+                    <div class="seggio-base seggio">
+                        <span>COMUNE 1</span>
+                    </div>
+                </a>
+                <a href="link_a_pagina_con_seggio.html">
+                    <div class="seggio-base seggio-add">
+                        <span>Aggiungi comune</span>
+                    </div>
+                </a>
+            </div>
+            <div class="edit-scene">
+                <h3>COMUNE</h3>
+                <div>
+                    <form>
+                        <label>
+                            Numero di seggi:
+                            <div>
+                                <input type="number" name="data_nascita" placeholder="Seggi">
+                            </div>
+                        </label>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <a href="fine_creazione.html">
+            <div class="end-button">
+                <span>Crea votazione</span>
+            </div>
+        </a>
+    </body>
+</html>

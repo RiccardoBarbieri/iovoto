@@ -15,6 +15,7 @@ p {
 
 h3 {
     font-size: 23px;
+    margin-bottom: 20px;
 }
 
 header {
@@ -50,7 +51,14 @@ a {
     text-decoration: underline !important;
 }
 
-.partiti h3 {
+.base-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.seggi h3 {
     margin: auto;
     margin-bottom: 10px;
 }
@@ -62,108 +70,42 @@ a {
     width: 100%;
 }
 
-.partiti {
+.seggi {
     display: flex;
     flex-direction: column;
     min-width: 250px;
 
     padding: 10px 20px;
 
-    margin-right: 30px;
+    margin-right: 60px;
 }
 
-.partito-base {
+.seggio-base {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 70px;
+    height: 35px;
     border-radius: 20px;
     margin-bottom: 5px;
 }
 
-.partito-base span {
+.seggio-base span {
     font-size: large;
     color: black;
     vertical-align: middle;
 }
 
-.partito-add {
+.seggio-add {
     background-color: #d2dbed;
 }
 
-.partito {
+.seggio {
     background-color: #0c01d3;
 }
 
-.partito > span {
+.seggio > span {
     color: white;
-}
-
-.candidati {
-    display: flex;
-    flex-direction: column;
-    border-radius: 20px;
-    width: 100%;
-
-    margin-left: 30px;
-}
-
-.selection {
-    display: flex;
-    flex-direction: row;
-    height: 85px;
-    border-radius: 20px;
-    background-color: #868e9b;
-}
-
-.partito-settings {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-right: solid 5px #bbc5d9;
-    min-width: 180px;
-}
-
-.candidato-selection {
-    scrollbar-width: thin;
-    overflow: auto;
-    max-width: 1230px;
-    padding-left: 10px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    width: 100%;
-    height: 100%;
-}
-
-.partito-tile {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 150px;
-    height: 55px;
-    background-color: #0c01d3;
-    border-radius: 15px;
-}
-
-.candidato-tile-base {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 150px;
-    height: 55px;
-    border-radius: 15px;
-    margin-right: 10px;
-}
-
-.candidato-tile-edit {
-    background-color: #0c01d3;
-}
-
-.candidato-tile-add {
-    background-color: #6d727c;
 }
 
 .edit-scene {
@@ -206,21 +148,6 @@ form input:not([type="submit"],[type="radio"]) {
 form input::placeholder {
     font-size: 20px;
     color: rgb(196, 196, 196);
-}
-
-form input[type="date"] {
-    padding-right: 10px;
-}
-
-form input[type="file"] {
-    color:white;
-}
-
-.radio-container {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    padding-top: 7px;
 }
 
 .end-button {
