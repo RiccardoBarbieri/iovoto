@@ -109,12 +109,54 @@ a {
     margin-left: 30px;
 }
 
-.candidati-selection {
+.selection {
     display: flex;
     flex-direction: row;
     height: 85px;
     border-radius: 20px;
     background-color: #828792;
+}
+
+.partito-settings {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: solid 5px #bbc5d9;
+    min-width: 180px;
+}
+
+.candidato-selection {
+    scrollbar-width: thin;
+    overflow: auto;
+    max-width: 1230px;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+}
+
+.partito-tile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 55px;
+    background-color: #0c01d3;
+    border-radius: 15px;
+}
+
+.candidato-tile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 55px;
+    background-color: #0c01d3;
+    border-radius: 15px;
+    margin-right: 10px;
 }
 
 .edit-scene {
@@ -160,6 +202,10 @@ form input::placeholder {
 
 form input[type="date"] {
     padding-right: 10px;
+}
+
+form input[type="file"] {
+    
 }
 
 .radio-container {
