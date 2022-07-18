@@ -51,6 +51,11 @@ a {
     text-decoration: underline !important;
 }
 
+.link-disabled {
+    text-decoration: none !important;
+    color: #bbc5d9 !important;
+}
+
 .base-container {
     display: flex;
     flex-direction: row;
@@ -151,14 +156,16 @@ form input::placeholder {
 }
 
 .end-button {
-    margin: 80px auto;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 200px;
     height: 35px;
     border-radius: 20px;
+
     margin-bottom: 5px;
+    margin: 80px auto;
+
     background-color: #0c01d3;
 }
 
@@ -166,4 +173,12 @@ form input::placeholder {
     font-size: large;
     color: white;
     vertical-align: middle;
+}
+
+.end-container {
+    display: flex;
+    flex-direction: row;
+    margin-left: 350px;
+    align-items: center;
+    justify-content: center;
 }
