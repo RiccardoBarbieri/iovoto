@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ioVoto</title>
     <link rel="stylesheet" href="presidente.css">
+    <script src="presidente.js"></script>
 </head>
 <body>
     <header>
@@ -15,12 +16,38 @@
     <div class="base-container">
         <div class="info-box">
             <div class="personal-info">
-                <h5>PRESIDENTE DEL SEGGIO</h5>
+                <h5>PRESIDENTE DEL SEGGIO:</h5>
                 <h5>Gianni Truglio</h5>
             </div>
             <div class="seggio-info">
-                <h5>SEGGIO NUMERO</h5>
+                <h5>SEGGIO NUMERO:</h5>
                 <h5>14</h5>
+            </div>
+        </div>
+        <div class="submit-box">
+            <div class="impaginazione-box">
+                <h2>Seggio n° 14</h2>
+                <h5>Presso il seggio n° 14, il quesito del referendum del 12 giugno 2022 ha ottenuto i seguenti risultati:</h5>
+                <div class="riga">
+                    <div class="cerchio">
+                        <div class="colonna">SI</div>
+                        <div class="colonna">450</div>
+                    </div>
+                    <div class="cerchio">
+                        <div class="colonna">NO</div>
+                        <div class="colonna">350</div>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div class="rig">
+                    <div class="bottone" onclick="annulla()">
+                        <h5>Annulla</h5>
+                    </div>
+                    <div class="bottone" onclick="conferma()">
+                        <h5>Registra</h5>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
