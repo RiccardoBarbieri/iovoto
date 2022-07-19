@@ -1,0 +1,203 @@
+* {
+    font-family: Actor;
+}
+
+body {
+    background-color: #bbc5d9;
+    padding: 30px 70px;
+}
+
+p {
+    letter-spacing: 2px;
+    font-size: x-large;
+}
+
+h3 {
+    font-size: 23px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5px;
+}
+
+header img {
+    width: 200px;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: x-large;
+    letter-spacing: 1px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.active {
+    text-decoration: underline !important;
+    cursor: pointer;
+}
+
+.disable {
+    color: grey;
+    cursor: not-allowed;
+    text-decoration: underline !important;
+}
+
+.base-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 0px;
+    background-color: #0c01d3;
+    border-radius: 20px;
+    height: 100%;
+    padding: 20px;
+    gap: 10px;
+}
+
+.titolo {
+    display: flex;
+    color: white;
+}
+
+.element {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    background-color: white;
+    width: 80%;
+    height: 35px;
+}
+
+.nome {
+    display: flex;
+    padding-left: 20px;
+    width: 150px;
+    text-align: center;
+}
+
+.tessera {
+    display: flex;
+    width: 150px;
+    text-align: center;
+    align-items: center;
+}
+
+.bottone {
+    width: 20%;
+    height: 25px;
+    color: white;
+    margin-right: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.bottone[selected]{
+    background-color: green;
+}
+
+.bottone:not([selected]){
+    background-color: #0c01d3;
+}
+
+:root {
+    --rad: .7rem;
+    --dur: .3s;
+    --color-dark: #0c01d3;
+    --color-light: #fff;
+    --color-brand: #0c01d3;
+    --font-fam: 'Lato', sans-serif;
+    --height: 4rem;
+    --btn-width: 6rem;
+    --bez: cubic-bezier(0, 0, 0.43, 1.49);
+  }
+
+.ricerca {
+    background: var(--color-dark); 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    box-sizing: border-box; height: 100%; font-size: 10px; 
+    box-sizing: inherit;
+    width: 80%;
+}
+
+form {
+  position: relative;
+  width: 100%;
+  background: var(--color-brand);
+  border-radius: 20px;
+}
+input {
+  height: var(--height);
+  font-family: var(--font-fam);
+  border: 0;
+  color: black;
+  font-size: 1.8rem;
+  border-radius: 20px;
+}
+input[type="search"] {
+  outline: 0; 
+  width: 100%;
+  background: var(--color-light);
+  padding: 0 1.6rem;
+  border-radius: 20px;
+  appearance: none; 
+  transition: all var(--dur) var(--bez);
+  transition-property: width, border-radius;
+  z-index: 1;
+  position: relative;
+}
+button {
+  height: var(--height);
+  font-family: var(--font-fam);
+  border: 0;
+  color: #0c01d3;
+  font-size: 1.8rem;
+  border-radius: 20px;
+  display: none; 
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: var(--btn-width);
+  font-weight: bold;
+  background: white;
+  border-radius: 20px;
+}
+input:not(:placeholder-shown) {
+  border-radius: 20px;
+  width: calc(100% - var(--btn-width));
+}
+input:not(:placeholder-shown) + button {
+    display: block;
+    border-radius: 20px;
+}
+label {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
