@@ -1,0 +1,141 @@
+* {
+    font-family: Actor;
+}
+
+body {
+    background-color: #bbc5d9;
+    padding: 30px 70px;
+}
+
+p {
+    letter-spacing: 2px;
+    font-size: x-large;
+}
+
+h3 {
+    font-size: 23px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5px;
+}
+
+header img {
+    width: 200px;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: x-large;
+    letter-spacing: 1px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.active {
+    text-decoration: underline !important;
+    cursor: pointer;
+}
+
+.disable {
+    color: grey;
+    cursor: not-allowed;
+    text-decoration: underline !important;
+}
+
+.base-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin-top: 0px;
+    background-color: #0c01d3;
+    border-radius: 20px;
+    margin: auto;
+}
+
+.padding {
+    display: flex;
+    flex-direction: column;
+    min-width: 250px;
+    width: 100%;
+    padding: 10px 20px;
+    margin-right: 30px;
+}
+
+.form-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-radius: 20px;
+    min-height: 450px;
+    color: white;
+}
+
+.centro {
+    margin-top: 10px;
+    font-size: 25px;
+}
+
+.submit-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    gap: 200px;
+}
+
+input {
+    border-radius: 20px;
+    width: 70%;
+    height: auto;
+    box-shadow: none;
+    text-decoration: none;
+    border: none;
+}
+
+label {
+    width: 400px;
+}
+
+.bottone {
+    display: flex;
+    background-color: white;
+    color: #0c01d3;
+    width: 80%;
+    border-radius: 20px;
+    height: auto;
+    cursor: pointer;
+    border: solid 1px;
+    margin: auto;
+    text-align: center;
+}
+
+.bottone:hover {
+    background-color: #0c01d3;
+    color: white;
+    border-color: white;
+    border: solid 1px;
+}
+
+.bottone h2 {
+    margin: auto;
+}
+

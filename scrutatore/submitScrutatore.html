@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Actor" />
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ioVoto</title>
+        <link rel="stylesheet" href="submitScrutatore.css">
+        <script src="./scrutatore.js"></script>
+
+    </head>
+
+    <body>
+        <header>
+            <img src="./images/logo.png" alt="logo" />
+            <div class="navbar">
+                <div class="disable" onclick="alert('Non è possibile registrare elettori\n La votazione è finita!')">
+                    <h2>Presenze</h2>
+                </div>
+                <div class="active">
+                    <h2>Esito Scrutionio</h2>
+                </div>
+            </div>
+        </header>
+        <div class="base-container">
+            <div class="padding"></div>
+            <div class="form-box">
+                <h3 class="centro">Risultati Referendum:</h3>
+                <form>
+                    <div class="submit-box">
+                        <label>Numero votanti:</label>
+                        <input type="text" placeholder="Numero votanti..."/>
+                    </div>
+                    <div class="submit-box">
+                        <label>Numero totali votanti seggio:</label>
+                        <input type="text" placeholder="Numero votanti..."/>
+                    </div>
+                    <div class="submit-box">
+                        <label>Numero schede nulle:</label>
+                        <input type="text" placeholder="Numero schede nulle..."/>
+                    </div>
+                    <div class="submit-box">
+                        <label>Numero schede "SI":</label>
+                        <input type="text" placeholder="Numero SI..."/>
+                    </div>
+                    <div class="submit-box">
+                        <label>Numero schede "NO":</label>
+                        <input type="text" placeholder="Numero NO..."/>
+                    </div>
+                    <div class="submit-box">
+                        <label>Numero schede bianche:</label>
+                        <input type="text" placeholder="Numero schede bianche..."/>
+                    </div>
+                    <div class="bottone" onclick="registra()">
+                        <h2>Registra</h2>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

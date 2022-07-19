@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Actor" />
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ioVoto</title>
+        <link rel="stylesheet" href="scrut.css">
+        <script src="./scrutatore.js"></script>
+    </head>
+    <body>
+        <header>
+            <img src="./images/logo.png" alt="logo"/>
+            <div class="navbar">
+                <div class="active">
+                    <h2>Presenze</h2>
+                </div>
+                <div class="disable" onclick="prova()">
+                    <h2>Esito Scrutinio</h2>
+                </div>
+            </div>
+        </header>
+        <div class="base-container">
+            <div class="titolo">
+                <h2>Registra elettori in presenza:</h2>
+            </div>
+            <div class="ricerca">
+                <form onsubmit="event.preventDefault();" role="search">
+                    <label for="search">Search for stuff</label>
+                    <input id="search" type="search" placeholder="Ricerca per Nome Cognome oppure per Numero Tessera Elettorale..." autofocus required />
+                    <button type="submit"><img src="./images/icons8-ricerca-50.png"></button>    
+                  </form>
+            </div>
+            <div class="element">
+                <div class="nome">Barbieri Riccardo</div>
+                <div class="tessera">123456789</div>
+                <div class="bottone" onclick="change(this)">Registra</div>
+            </div>
+            <div class="element">
+                <div class="nome">Ettore Cesari</div>
+                <div class="tessera">321987465</div>
+                <div class="bottone" onclick="change(this)">Registra</div>
+            </div>
+            <div class="element">
+                <div class="nome">Filippo Lucchesi</div>
+                <div class="tessera">789654321</div>
+                <div class="bottone" onclick="change(this)">Registra</div>
+            </div>
+            <div class="element">
+                <div class="nome">Giancarlo Pastore</div>
+                <div class="tessera">236798541</div>
+                <div class="bottone" onclick="change(this)">Registra</div>
+            </div>
+            <div class="element">
+                <div class="nome">Filippo Pilati</div>
+                <div class="tessera">564738291</div>
+                <div class="bottone" onclick="change(this)">Registra</div>
+            </div>
+            <div class="element">
+                <div class="nome">Leonardo Ruberto</div>
+                <div class="tessera">918273645</div>
+                <div class="bottone" onclick="change(this)">Registra</div>
+            </div>
+            <div class="element">
+                <div class="nome">Gabriele Tassinari</div>
+                <div class="tessera">987654321</div>
+                <div class="bottone" onclick="change(this)">Registra</div>
+            </div>
+        </div>
+    </body>
+</html>
