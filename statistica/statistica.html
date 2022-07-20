@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Actor" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ioVoto</title>
+    <link rel="stylesheet" href="statistica.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="statistica.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="./images/logo.png">
+        <div class="titolo">
+            <h2>Risultati votazione 12 giugno 2022</h2>
+        </div>
+    </header>
+    <div class="box-container">
+        <div class="left-box">
+            <div class="info-box">
+                <div class="nome">Tipologia votazione:</div>
+                <div class="tipo">Referendum</div>
+            </div>
+            <div class="lelement">
+                <div class="telement">
+                    <div class="name">Affluenza Regioni Votanti:</div>
+                </div>
+                <div class="element">
+                    <div class="nome">Abruzzo</div>
+                    <div class="si">30%</div>
+                </div>
+                <div class="element">
+                    <div class="nome">Basilicata</div>
+                    <div class="si">32%</div>
+                </div>
+                <div class="element">
+                    <div class="nome">Calabria</div>
+                    <div class="si">90%</div>
+                </div>
+                <div class="element">
+                    <div class="nome">Campania</div>
+                    <div class="si">40%</div>
+                </div>
+                <div class="element">
+                    <div class="nome">Emilia Romagna</div>
+                    <div class="si">80%</div>
+                </div>
+                <div class="element">
+                    <div class="nome">Friuli Venezia Giulia</div>
+                    <div class="si">25%</div>
+                </div>
+                <div class="element">
+                    <div class="nome">Lazio</div>
+                    <div class="si">70%</div>
+                </div>
+                <div class="element">
+                    <div class="nome">Liguria</div>
+                    <div class="si">65%</div>
+                </div>
+                <div class="element">
+                    <div class="nome">Lombardia</div>
+                    <div class="si">35%</div>
+                </div>
+                <div class="element">
+                    <div class="nome">Marche</div>
+                    <div class="si">49%</div>
+                </div>
+                <div class="element">
+                    <div class="nome">Molise</div>
+                    <div class="si">54%</div>
+                </div>
+                <div class="element">
+                    <div class="nome">Piemonte</div>
+                    <div class="si">25%</div>
+                </div>
+                <div class="element">
+                    <div class="nome">Puglia</div>
+                    <div class="si">75%</div>
+                </div>
+                <div class="element">
+                    <div class="nome">Sardegna</div>
+                    <div class="si">80%</div>
+                </div>
+                <div class="element">
+                    <div class="nome">Sicilia</div>
+                    <div class="si">20%</div>
+                </div>
+                <div class="element">
+                    <div class="nome">Toscana</div>
+                    <div class="si">37%</div>
+                </div>
+                <div class="element">
+                    <div class="nome">Trentino Alto Adige</div>
+                    <div class="si">55%</div>
+                </div>
+                <div class="element">
+                    <div class="nome">Umbria</div>
+                    <div class="si">13%</div>
+                </div>
+                <div class="element">
+                    <div class="nome">Val d'Aosta</div>
+                    <div class="si">35%</div>
+                </div>
+                <div class="element">
+                    <div class="nome">Veneto</div>
+                    <div class="si">10%</div>
+                </div>
+            </div>
+        </div>
+        <div class="right-box">
+            <div class="rig">
+                <div class="pie-chart-box">
+                    <div class="titol">
+                        <center>Risultati in tempo reale</center>
+                    </div>
+                    <div class="grafico2">
+                        <div>
+                            <canvas id="myChart2"></canvas>
+                        </div>
+                        <script>
+                            const data2 = {
+                                labels: [
+                                    'Sì',
+                                    'No'
+                                ],
+                                datasets: [{
+                                    label: 'Risultati ',
+                                    data: [100, 70],
+                                    backgroundColor: [
+                                        'rgb(54, 162, 235)',
+                                        'rgb(255, 205, 86)'
+                                    ],
+                                    hoverOffset: 3
+                                }]
+                            };
+
+                            const config2 = {
+                                type: 'doughnut',
+                                data: data2,
+                            };
+                        </script>
+                        <script>
+                            const myChart2 = new Chart(
+                                document.getElementById('myChart2'),
+                                config2
+                            );
+                        </script>
+                    </div>
+                </div>
+                <div class="statistica-parti-italia-box">
+                    <div class="tito">
+                        <div class="tio">Risultati per parti d'Italia</div>
+                        <div class="oit">Percenutale votanti in relazione alla popolazione</div>
+                    </div>
+                    <div class="grafico2">
+                        <div>
+                            <canvas id="myChart3"></canvas>
+                        </div>
+                        <script>
+                            const data11 = {
+                                labels: [
+                                    'Nord Italia',
+                                    'Centro Italia',
+                                    'Sud Italia'
+                                ],
+                                datasets: [{
+                                    label: 'My First Dataset',
+                                    data: [11, 14, 18],
+                                    backgroundColor: [
+                                        'rgb(255, 99, 132)',
+                                        'rgb(75, 192, 192)',
+                                        'rgb(255, 205, 86)'
+                                    ]
+                                }]
+                            };
+                            const config11 = {
+                                type: 'polarArea',
+                                data: data11,
+                                options: {}
+                            };
+                        </script>
+                        <script>
+                            const myChart11 = new Chart(
+                                document.getElementById('myChart3'),
+                                config11
+                            );
+                        </script>
+                    </div>
+                </div>
+                <div class="affluenza-complessiva-box">
+                    <div class="tit">
+                        <center>Percentuale votanti</center>
+                    </div>
+                    <div class="grafico1">
+                        <div>
+                            <canvas id="myChart1"></canvas>
+                        </div>
+                        <script>
+                            const data21 = {
+                                labels: [
+                                    'Votanti Online',
+                                    'Votanti Presenza',
+                                    'Non ancora votato'
+                                ],
+                                datasets: [{
+                                    label: 'My First Dataset',
+                                    data: [150, 70, 100],
+                                    backgroundColor: [
+                                        'rgb(255, 99, 132)',
+                                        'rgb(54, 162, 235)',
+                                        'rgb(255, 205, 86)'
+                                    ],
+                                    hoverOffset: 4
+                                }]
+                            };
+
+                            const config21 = {
+                                type: 'doughnut',
+                                data: data21,
+                            };
+                        </script>
+                        <script>
+                            const myChart21 = new Chart(
+                                document.getElementById('myChart1'),
+                                config21
+                            );
+                        </script>
+                    </div>
+                </div>
+            </div>
+            <div class="riga">
+                <div class="statistica-box">
+                    <div class="tit">
+                        <center>Affluenza ai seggi in Italia</center>
+                    </div>
+                    <div class="grafico1">
+                        <div>
+                            <canvas id="myChart"></canvas>
+                        </div>
+                        <script>
+                            const labels = [
+                                '00:00',
+                                '03:00',
+                                '06:00',
+                                '09:00',
+                                '12:00',
+                                '15:00',
+                                '18:00',
+                            ];
+
+                            const data = {
+                                labels: labels,
+                                datasets: [{
+                                    label: 'Affluenza',
+                                    backgroundColor: 'rgb(255, 99, 132)',
+                                    borderColor: 'rgb(255, 99, 132)',
+                                    data: [100, 20, 50, 45, 60, 90, 50],
+                                }]
+                            };
+                            const config = {
+                                type: 'line',
+                                data: data,
+                                options: {}
+                            };
+                        </script>
+                        <script>
+                            const myChart = new Chart(
+                                document.getElementById('myChart'),
+                                config
+                            );
+                        </script>
+                    </div>
+                </div>
+                <div class="statistica-verticale-box">
+                    <div class="testot">Risultati in percentuale</div>
+                    <div class="spazio-si">
+                        <div class="tes">Voti SI</div>
+                        <div class="set">61%</div>
+                    </div>
+                    <div class="spazio-si">
+                        <div class="tes">Voti NO</div>
+                        <div class="set">39%</div>
+                    </div>
+                </div>
+                <div class="statistica-box-non">
+                    <div class="text">Situazione Votazione Online</div>
+                    <div class="spazion">
+                        <div class="tes">Schede Valide</div>
+                        <div class="set">60%</div>
+                    </div>
+                    <div class="spazion">
+                        <div class="tes">Schede Bianche</div>
+                        <div class="set">22%</div>
+                    </div>
+                    <div class="spazion">
+                        <div class="tes">Schede Nulle</div>
+                        <div class="set">18%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

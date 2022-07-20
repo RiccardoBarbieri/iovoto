@@ -1,0 +1,258 @@
+* {
+    font-family: Actor;
+}
+
+body {
+    background-color: #bbc5d9;
+    padding: 0px;
+    color: white;
+}
+
+p {
+    letter-spacing: 2px;
+    font-size: x-large;
+}
+
+h3 {
+    font-size: 23px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+header img {
+    width: 200px;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: x-large;
+    letter-spacing: 1px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.link-selected {
+    text-decoration: underline !important;
+}
+
+.titolo {
+    margin: auto;
+    font-size: 25px;
+}
+
+.box-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    gap: 20px;
+}
+
+.left-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    width: 20%;
+    background-color: #0c01d3;
+    height: auto;
+    flex-grow: 1;
+}
+
+.riga {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.info-box {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+.lelement {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+
+.telement {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    padding-bottom: 5px;
+}
+
+.element {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    color: white;
+}
+
+.nome {
+    display: flex;
+    align-items: flex-start;
+}
+
+.si {
+    display: flex;
+}
+
+.right-box {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    background-color: #0c01d3;
+    border-radius: 20px;
+    
+}
+
+.rig {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.statistica-box {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 20px;
+    color: black;
+    height: auto;
+    margin: 20px;
+}
+
+.tits {
+    display: flex;
+    color: black;
+}
+
+.grafico1 {
+    width: 300px;
+}
+
+.affluenza-complessiva-box {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 20px;
+    color: black;
+    height: auto;
+    margin: 20px;
+}
+
+.pie-chart-box{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 20px;
+    height: 320px;
+    color: black;
+    margin: 20px;
+}
+
+.grafico2{
+    width: 300px;
+}
+
+.tito {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    margin: 10px;
+}
+
+.tio {
+    font-size: 23px;
+}
+
+.statistica-parti-italia-box {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 20px;
+    color: black;
+    margin: 20px;
+}
+
+.statistica-verticale-box {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    color: black;
+    width: 25%;
+    border-radius: 20px;
+    margin: 20px;
+}
+
+.testot {
+    text-align: center;
+    color: black;
+    padding: 10px;
+}
+
+.spazio-si {
+    display: flex;
+    flex-direction: row;
+    background-color: #bbc5d9;
+    justify-content: space-between;
+    border: solid 2px;
+    border-color: #0c01d3;
+    border-radius: 20px;
+    padding: 10px;
+    height: auto;
+    margin: 10px;
+}
+
+.statistica-box-non {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 20px;
+    margin: 20px 20px 20px 30px;
+    width: 25%;
+    color: black;
+}
+
+.text {
+    text-align: center;
+    padding: 10px;
+}
+
+.spazion {
+    display: flex;
+    flex-direction: row;
+    background-color: #bbc5d9;
+    justify-content: space-between;
+    border: solid 2px;
+    border-color: #0c01d3;
+    border-radius: 20px;
+    padding: 10px;
+    height: auto;
+    margin: 10px;
+}
+
